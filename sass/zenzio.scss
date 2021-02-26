@@ -166,7 +166,7 @@ ul{
 		
 		a{color:$white;}
 		.footer-logo{
-			margin-bottom:27px;
+			margin:0 auto 27px;
 			width:120px;}
 		.footer-menu{
 			display:block;
@@ -194,7 +194,6 @@ ul{
 						border-bottom:none;
 						margin-bottom:0;}
 					}
-				.copyright{text-align:left;}
 				.terms{
 					display:flex;
 					justify-content: flex-end;
