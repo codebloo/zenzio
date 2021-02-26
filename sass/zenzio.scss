@@ -1,0 +1,348 @@
+
+$sunshine:#FF9900;
+	$sunshine-hover:#FFC946;
+$forest:#4B7568;
+$sand:#FFFCF0;
+$ocean:#0094FF;
+	$ocean-hover:#6EC2FF;
+$snow:#E5E5E5;
+$leafs:#335556;
+$white: #fff;
+$black: #000;
+
+$murk:#0A3C42;
+
+$poppins: 'Poppins', sans-serif;
+
+body,
+section{font-family:$poppins;}
+
+h1,
+.h1{
+	font-family:$poppins;
+	font-size:48px;
+	font-weight:600;
+	line-height:60px;
+	text-align:center;}
+
+h2,
+.h2{
+	font-family:$poppins;
+	font-size:32px;
+	font-weight:600;
+	line-height:36px;}
+
+h3,
+.h3{
+	font-family:$poppins;
+	font-size:32px;
+	font-weight:600;
+	line-height:36px;}
+
+.body1{
+	font-family:$poppins;
+	font-size:24px;
+	font-weight:400;
+	line-height:38px;}	
+	
+.body2{
+	font-family:$poppins;
+	font-size:18px;
+	font-weight:400;
+	line-height:32px;}	
+
+.cta{
+	background-color:$ocean;
+	border-radius: 20px;
+	color:$white;
+	display:inline-block;
+	font-family:$poppins;
+	font-size:24px;
+	font-weight:600;
+	line-height:24px;
+	margin:0 auto;
+	padding:27px 36px;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	&:hover{background-color:$ocean-hover;}
+}
+
+.text-link{
+	align-items:center;
+	color:$white;
+	display:flex;
+	font-family:$poppins;
+	font-size:24px;
+	font-weight:400;
+	justify-content:center;
+	line-height:38px;
+	margin-bottom:45px;
+	
+	i{
+		background-image:url(../images/arrow.svg);
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		display:block;
+		height:22px;
+		margin-left:9px;
+		width:50px;
+		
+	}
+}
+
+.learn-more{
+	background-color:$sunshine;
+	border-radius:10px;
+	 bottom: 20px;
+	color:$white;
+	display:block;
+	font-family:$poppins;
+	font-size:24px;
+	font-weight:400;
+	left: 20px;
+	line-height:1;
+	padding:27px 18px;
+	position: absolute;
+	right: 20px;
+	text-align:center;
+	width: calc(100% - 40px);
+	&:hover{background-color:$sunshine-hover;}
+}	
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+	h1,
+	.h1{
+		font-size:60px;
+		line-height:90px;}
+	h2,
+	.h2{
+		font-size:48px;
+		line-height:60px;}
+
+	.cta{
+		font-size:32px;
+		line-height:36px;}
+}
+
+	
+ul{
+	display:flex;
+	list-style-type:none;
+	margin:0;
+	padding:0;}
+	a{text-decoration:none;}	
+	img{
+		display:block;
+		height:auto;
+		max-width:100%;}	
+	
+	
+	header{
+		-webkit-transition: all ease-out .5s;
+		  -moz-transition: all ease-out .5s;
+		  -o-transition: all ease-out .5s;
+		  transition: all ease-out .5s;
+		padding:24px 0;
+		//position:fixed;
+		position:absolute;
+		width:100%;
+		z-index: 3;
+		ul{text-align:right;}
+		li{margin-left:18px;}
+		a{
+			color:$black;
+			text-transform:uppercase;}
+		
+		//&.active {background-color: rgba(255,255,255,0.9);}
+		
+	}
+	
+	footer{
+		background-color:$leafs;
+		color:$white;
+		padding:36px 0;
+		
+		a{color:$white;}
+		.footer-logo{
+			margin-bottom:27px;
+			width:120px;}
+		.footer-menu{
+			display:block;
+			margin-bottom:36px;
+			li:first-child{
+				border-bottom:1px solid $white;
+				margin-bottom:18px;}
+			a{
+				display:block;
+				padding:0 0 18px 0;
+				text-transform:uppercase;}
+			}	
+		.terms{
+			display:block;
+			margin-bottom:27px;
+			
+		}	
+			
+		.copyright{text-align:center;}
+		
+		
+			@media only screen and (min-width: 768px) {
+				.footer-menu{
+					li:first-child{
+						border-bottom:none;
+						margin-bottom:0;}
+					}
+				.copyright{text-align:left;}
+				.terms{
+					display:flex;
+					justify-content: flex-end;
+					margin-bottom:0;
+					li{margin-left:27px;}
+					}
+	
+			}
+	}
+	
+	
+	//zen-hero
+	.zen-hero{
+		background-image:url(../images/hero.png);
+		background-repeat:no-repeat;
+		background-size:auto 100%;
+		background-position:center top;
+		margin-bottom:109px;
+		padding-top:81px;
+		text-align:center;
+		
+		.hero-title{margin-bottom:36px;}
+		
+		@media only screen and (min-width: 768px) {
+			background-image:url(../images/hero.png);
+			background-size:80% auto;
+			margin-bottom:0;
+			min-height:600px;}
+			
+			@media only screen and (min-width: 1280px) {
+				margin-bottom:0;
+				min-height:900px;}	
+		
+	}
+	
+	//zen-intro
+	.zen-intro{
+		background: linear-gradient(180deg, rgba(255, 242, 178, 0) 0%, #FFF2B2 200%);
+		color:$black;
+		text-align:center;
+		
+		
+		.intro-title{margin-bottom:18px;}
+		.intro-text{margin-bottom:45px}
+		
+		@media only screen and (min-width: 768px) {
+			background:none;
+			padding-top:108px;
+			
+		}
+	}
+	
+	//zen-people
+	.zen-people{
+		background-image:url(../images/zen-bg-mob.png);
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		background-position:center top;
+		color:$white;
+		min-height:1107px;
+		text-align:center;
+		.computer{padding-top:200px;}
+		.computer-link{display:block;}
+		.people-title{margin-bottom:18px;}
+		.people-text{margin-bottom:45px}
+		
+		@media only screen and (min-width: 768px) {
+			background-image:url(../images/zen-bg.png);
+			background-position:center top;
+			
+		}
+	}
+	
+	//zen-connect
+	.zen-connect{
+		background-color:$sand;
+		margin-top: -10px;
+		text-align:center;
+		
+		.connect-content{padding-top:72px;}
+		.connect-title{margin-bottom:18px;}
+		.connect-text{margin-bottom:45px}
+		.connect-logo{
+			margin:0 auto 54px;
+			max-width:553px;
+			width:100%;}
+		.curved{
+			margin-top:-1px	;
+			width:100%;}	
+	}
+	
+	//zen-serenity
+	.zen-serenity{
+		background-color:$forest;
+		color:$white;
+		padding-bottom:90px;
+		text-align:center;
+		.serenity-content{padding-top:108px;}
+		.serenity-title{margin-bottom:18px;}
+		.serenity-text{margin-bottom:45px}
+	}
+	
+	//zen-features
+	.zen-features{
+		background-color:$forest;
+		.feature-col{margin-bottom:55px;}
+		.single-feature{
+			background: #4D8170;
+			border: 1px solid $forest;
+			border-radius: 20px;
+			box-shadow: 0px 0px 4px rgba(107, 200, 183, 0.25);
+			color:$white;
+			height:100%;
+			margin-bottom:55px;
+			padding: 58px 20px 45px;
+			position:relative;}
+		.single-title{margin-bottom:18px;}
+		.single-content{margin-bottom:45px;}	
+		img{
+			height:113px;
+			margin:0 auto;}	
+		.icon-wrapper{margin-bottom:27px;}
+			
+		@media only screen and (min-width: 769px) {
+				img{margin:0;}	
+		}	
+		
+		
+	}
+	
+	//zen-hello
+	.zen-hello{
+		padding:0px 0 82px;
+		text-align:center;
+		.hello-content{padding-top:108px;}
+		.hello-title{margin-bottom:18px;}
+		.hello-text{margin-bottom:45px}
+		img{
+			margin-top:-1px	;
+			width:100%;}
+		
+		@media only screen and (min-width: 768px) {
+			padding:0px 0 189px;
+			.hello-content{padding-top:108px;}
+			.hello-title{margin-bottom:36px;}
+			.hello-text{margin-bottom:54px}
+			
+		}
+		
+		
+	}

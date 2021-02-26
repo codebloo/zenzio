@@ -1,0 +1,1 @@
+$((function(){$(window).on("scroll",(function(){$(window).scrollTop()>50?$("header").addClass("active"):$("header").removeClass("active")}))}));
