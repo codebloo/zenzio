@@ -165,7 +165,7 @@ footer a {
   color: #fff;
 }
 footer .footer-logo {
-  margin-bottom: 27px;
+  margin: 0 auto 27px;
   width: 120px;
 }
 footer .footer-menu {
@@ -192,9 +192,6 @@ footer .copyright {
   footer .footer-menu li:first-child {
     border-bottom: none;
     margin-bottom: 0;
-  }
-  footer .copyright {
-    text-align: left;
   }
   footer .terms {
     display: flex;
@@ -385,4 +382,20 @@ footer .copyright {
   .zen-hello .hello-text {
     margin-bottom: 54px;
   }
+}
+
+.lity-wrap {
+  overflow-y: auto;
+}
+
+.learn-more-content {
+  background-color: #fff;
+  max-width: 600px;
+  padding: 18px 18px 0 18px;
+}
+.learn-more-content h3 {
+  margin-bottom: 27px;
+}
+.learn-more-content p {
+  padding-bottom: 18px;
 }
